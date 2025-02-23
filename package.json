@@ -24,7 +24,6 @@
     "typecheck": "tsc",
     "typegen": "wrangler types",
     "preview": "pnpm run build && pnpm run start",
-    "prepare": "husky",
     "clean": "node scripts/clean.js"
   },
   "engines": {

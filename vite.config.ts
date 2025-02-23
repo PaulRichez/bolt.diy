@@ -112,6 +112,10 @@ export default defineConfig((config) => {
       chrome129IssuePlugin(),
       config.mode === 'production' && optimizeCssModules({ apply: 'build' }),
     ],
+    server: {
+      // Allow the host name from your docker-compose network
+      allowedHosts: true,
+    },
     envPrefix: [
       'VITE_',
       'OPENAI_LIKE_API_BASE_URL',
