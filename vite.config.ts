@@ -74,6 +74,7 @@ const gitInfo = getGitInfo();
 export default defineConfig((config) => {
   return {
     define: {
+      __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS: true,
       __COMMIT_HASH: JSON.stringify(gitInfo.commitHash),
       __GIT_BRANCH: JSON.stringify(gitInfo.branch),
       __GIT_COMMIT_TIME: JSON.stringify(gitInfo.commitTime),
